@@ -1,0 +1,441 @@
+@import url("root.css");
+@import url("aem-grid-12.css");
+@import url("font-awesome/css/font-awesome.css");
+
+
+*
+{
+        margin: 0;
+        padding: 0;
+}
+body 
+{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background: var(--alabasterr) 0% 0% no-repeat padding-box;
+        color: var(--oxford-blue);
+        font-size: 14px;
+        overflow-x: hidden;
+}
+
+.offer-banner
+ {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 40px;
+        background: var(--cape-palliser) 0% 0% no-repeat padding-box;
+        opacity: 1;
+        color: var(--beige);
+        letter-spacing: 0px;
+        text-align: center;
+        line-height: 38px;
+ }
+
+ header
+  {
+        padding: 0 50px 30px 50px;
+  }
+      
+ header ul 
+ {
+        text-align: center;
+ }
+
+
+ header nav
+ {
+        padding:50px 20px 10px;
+        font-weight: bold;
+ }
+      
+header ul li 
+{
+        display: inline-block;
+        padding: 0 20px;
+        font-weight: 500;
+}
+      
+header .logo 
+{
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 2;
+        letter-spacing: 1.6px;
+        padding: 0px 25%;
+        text-align: center;
+}
+      
+.header-banner
+{
+        
+        background-image: url('../assets/banner.png');
+        background-position: 40% 0%;
+        background-repeat: no-repeat;
+        background-size: auto, auto;
+        position: relative;
+
+}
+.hero-banner
+{
+
+        display: flex;
+        flex-direction: row;
+        padding: 0px 140px 60px 140px;
+
+}
+.hero-banner .tag
+{
+        background:var(--alabasterr) ;
+        margin: 0;
+        padding:10px;
+        color: var(--oxford-blue);
+        border:none;
+        font-size: 12px;
+        cursor: pointer;
+}
+     
+.hero-banner .hero-banner-text
+ {
+ 
+        justify-content: center;
+        padding: 110px 105px 0 0;
+
+ }
+
+ .hero-banner .hero-banner-image
+ {
+        background-image:url('../assets/plant.png'), url('../assets/plant-1.png');
+        background-position: -182px 25px, 200px 10px;
+        width: 80%;
+        background-repeat: no-repeat;
+        
+        flex: 2;
+  }
+
+ .hero-banner-image img
+{
+        position: relative;
+}
+
+.secondary-banner
+{
+        
+        padding: 30px;
+        text-align: center;
+        line-height: 30px;
+        border: 1px solid var(--como);
+
+}
+
+.product-teaser
+{
+        margin: 60px 130px 120px;
+}
+
+.product-teaser .teaser-title
+{
+        float: right;
+}
+
+.sooth-button
+{
+        border: 1px solid var(--oxford-blue);
+        background: var(--athens-gray);
+        padding: 6px 30px;
+        margin: 20px 0;
+  
+}
+.container
+{
+        display: flex;
+}
+
+.card 
+{
+        margin-right: 20px;
+        height: 400px;
+        width: 250px;
+
+}
+.card  .card-header
+{
+        position: relative;
+}
+.card .card-header img 
+{
+        background-color: var(--white);  
+        width: 100%;  
+        height: 300px;
+        object-fit: cover;
+}
+.card  .card-body
+{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top:8px;
+
+}
+.card-body .sooth-button{
+        align-items: center;
+
+}
+.card-body .sooth-button:hover{
+        background: var(--white);
+}
+.aem-GridColumn--default--1{
+        margin-bottom: 30px;
+}
+.card-body h6{
+        margin-top: 10px;
+}
+
+.image-tiles{
+        text-align: center;
+        margin: 0px  160px 100px;
+}
+.image-tiles .card-header img{
+        background-color: transparent;
+        width:100%;
+}
+.image-tiles .card-body
+{
+         text-align: center;
+
+}
+.image-tiles .card{
+         margin: 0 10px;
+} 
+.feature-banner{
+  
+          padding: 40px 230px;
+          text-align: center;
+          background-color:  #EEF2F4;
+
+}
+
+.feature-banner .card-body{
+         line-height: 2; 
+}
+.feature-banner .fa{
+         color:var(--silver-rust);
+}
+.feature-banner p{
+          text-decoration: underline;
+          padding-top:10px
+}
+
+.new-tag 
+{
+          position: relative;
+          left: 14px;
+          top: 46px;
+          background:var(--alabasterr) ;
+          margin: 0;
+          padding:10px;
+          color: var(--oxford-blue);
+          border:none;
+          font-size: 12px;
+          cursor: pointer;
+
+}
+.offer
+{
+   color:var(--cape-palliser);
+}
+
+.offer-color
+{
+   color: var(--cape-palliser);
+}
+.text-strike
+{
+   text-decoration: line-through;
+   color: #2E2E22;
+}
+.card-body p 
+{
+    font-size: 12px;
+}
+
+.teaser
+{
+  display: flex;
+}
+.teaser img
+{
+  width: 100%;
+ 
+}
+
+.teaser .sooth-button{
+  background-color: transparent;
+  border-color:var(--white) ;
+  color: var(--white);
+}
+.teaser-left{
+  background: var(--como) 0% 0% no-repeat padding-box;
+ 
+}
+.teaser-text{
+  justify-content: initial;
+  margin:160px 130px 140px ;
+  color: var(--white);
+}
+
+.teaser2 .teaser-left{
+   background: var(--silver-rust);
+}
+.teaser2 .teaser-text{
+  margin: 160px 94px
+}
+
+.teaser-text p{
+  padding : 20px 0px;
+}
+
+.news-letter{
+  padding: 20px 100px;
+  background-color: var(--white);
+  border: 1px solid var(--oxford-blue);
+  
+}
+.sooth-pl-30px{
+  padding-left: 30px;
+}
+.pb-30px{
+  padding-bottom: 30px;
+}
+
+.news-letter h3 {
+  text-align: start;
+ 
+ border-right: 1px groove rgb(198, 185, 182, 0.3);
+ 
+}
+.news-letter p{
+  padding: 10px 0  0 22px;
+}
+.news-letter .sooth-button{
+  background-color: var(--rebbrown) ;
+  border: 1px solid var(--rebbrown);
+  color: var(--white);
+}
+.sooth-input{
+  padding: 6px 30px;
+  margin-right: -5px; 
+  border: 1px solid var(--rebbrown);
+}
+/* .news-letter >div :last-child{
+  padding-left: 65px;
+} */
+
+.subscribe{
+  text-align: end;
+}
+
+/* footer */
+footer{
+  background-color: var(--oxford-blue);
+  color: var(--white);
+}
+.footer-section{
+  display:flex;
+  padding: 120px 100px 80px;
+}
+
+.footer-right{
+  flex-direction: row;
+  flex:2
+}
+.footer-right ul{
+  list-style: none;
+  line-height: 2;
+}
+
+.footer-left{
+  flex:2;
+  line-height: 3;
+}
+.footer-left .sooth-button
+{
+  background:transparent;
+  border:1px solid var(--white);
+  color: var(--white);
+}
+.footer-left .sooth-input
+{
+  background:transparent;
+  border:1px solid var(--white);
+  color: var(--white);
+}
+
+.copyright-section{
+  display:flex;
+  margin:10px 100px;
+  padding: 50px 0px;
+  line-height: 2;
+  border-top: 0.5px solid var(--white);
+
+}
+.copyright-section  li{
+  display: inline;
+  padding-right: 90px;
+  text-decoration: underline;
+
+}
+.copyright-section .fa{
+  float: right;
+  padding: 10px 0 0 25px ;
+  color:var(--white);
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+  .header-banner
+{
+        
+        background: url('../assets/banner.png') center center fixed no-repeat;
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: 100%,100%;
+        position: relative;
+
+}
+  .hero-banner
+  {
+  
+          display: flex;
+          flex-direction: column-reverse;
+          padding: 0px ;       
+  
+  }
+  
+       
+  .hero-banner .hero-banner-text
+   {
+   
+          justify-content: center;
+         
+  
+   }
+  
+   .hero-banner .hero-banner-image
+   {
+
+          background-position: 0px;
+          width: 80%;
+          background-repeat: no-repeat;
+
+    }
+  
+   .hero-banner-image img
+  {
+          position: relative;
+  }
+  
+
+}
