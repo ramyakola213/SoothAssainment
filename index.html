@@ -16,20 +16,20 @@
 <body>
         <main class="aem-Grid aem-Grid--12">
              <!-- offer banner starts -->
-                <div class="offer-banner">
+                <div class="offer-banner" name="offer-banner" >
                         Free Standard Shipping on orders over $99.99
                 </div>
              <!-- offer banner ends here -->
 
 
              <!-- Header banner starts -->
-                <section class="header-banner aem-Grid aem-Grid--12">
+                <section class="header-banner aem-Grid aem-Grid--12" name="header-banner" role="banner">
 
                         <!-- Nav bar starts here -->
                         <header>
-                                <div class="navone">
-                                <nav>
-                                        <ul class="sooth-left">
+                               
+                                <nav role="navigation" aria-hidden="true">
+                                        <ul class="sooth-left" role="link">
                                                 <li>
                                                         ABOUT
                                                 </li>
@@ -38,8 +38,12 @@
                                                 </li>
                                         </ul>
 
-                                        <span class="logo"> sooth</span>
-
+                                        <span class="logo">
+                                                <i class="fa fa-bars hamburger mobile" id="hamburger" onclick="respNav()" aria-hidden="true"></i> 
+                                                sooth
+                                                
+                                        </span>
+ 
                                         <ul class="sooth-right">
                                                 <li>
                                                         <i class="fa fa-search" ></i>
@@ -48,12 +52,12 @@
                                                 <li>
                                                         CART
                                                 </li>
-                                                <li>
+                                                <li class="desk">
                                                         LOGIN
                                                 </li>
                                         </ul>
 
-                                        <ul>
+                                        <ul class="navbar">
                                                 <li>
                                                         Acne
                                                 </li>
@@ -71,31 +75,17 @@
                                                 </li>
                                         </ul>
                                 </nav>
-                        </div>
-                        <!-- <div class="navtwo">
-                                <nav>
-                                        <span class="logo"> sooth</span> 
-                                        <ul class="sooth-right">
-                                                <li>
-                                                        <i class="fa fa-search" ></i>
-        
-                                                </li>
-                                                <li>
-                                                        CART
-                                                </li>
-        
-                                        </ul> 
-                                </nav>
+                        
 
-                        </div> -->
                         </header>
                         <!-- Navabar Ends -->
                          
                         <!-- Hero Baneer starts from here-->
-                        <div class="hero-banner ">
+                        <section name="hero-banner" role="carousel-banner">
+                         <div class="hero-banner ">
                                 <div class="hero-banner-text">
-                                        <button class="tag">New!</button>
-                                        <h1>
+                                        <button class="tag" role="button">New!</button>
+                                        <h1 role="heading">
                                                 All Natural Skin Remedies.
                                         </h1>
                                         <p>
@@ -109,9 +99,12 @@
 
 
                                 <div class="hero-banner-image">
-                                     <img src="./assets/ezcema-1@2x.png" alt="hero-banner-bg">
+                                     <img src="./assets/ezcema-1@2x.png" alt="hero-banner-bg" class="desk" role="image"  aria-hidden="true">
+                                     <img src="./assets/ezcema-1.png" alt="hero-banner-bg " role="image" class="mobile" aria-hidden="true">
+                                     
                                 </div>
-                        </div>
+                         </div>
+                       </section>
                         <!-- Hero banner ends here-->
                 </section>
 
@@ -125,15 +118,15 @@
                 <!-- Secondary Banner Ends -->
 
                 <!-- Product teaser starts from here-->
-                <section class="product-teaser">
-                        <h6 class="titles">Most Popular <span class="teaser-title">Shop all Products</span></h6>
+                <section class="product-teaser" name="product-teaser" >
+                        <h6 class="titles" role="heading">Most Popular <span class="teaser-title">Shop all Products</span></h6>
                         <div class="container aem-Grid.aem-Grid--4">
                                 <article class="card aem-GridColumn.aem-GridColumn--default--1">
                                         <div class="card-header">
-                                                <button class="new-tag">New!</button>
+                                                <button class="new-tag" role="button">New!</button>
                                                 <img src="assets/Cream1.png"
                                                         onmouseover="this.src='assets/hand.png'"
-                                                        onmouseout="this.src='assets/Cream1.png'" alt="rover" id="image" />
+                                                        onmouseout="this.src='assets/Cream1.png'" alt="rover" id="image" role="image"  aria-hidden="true" />
 
                                         </div>
                                         <div class="card-body">
@@ -145,7 +138,7 @@
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                 
 
                                         </div>
@@ -156,19 +149,19 @@
                                                 <img src="assets/vitiligio-1@2x.png"
                                                         onmouseover="this.src='assets/vitiglio_treatment.png'"
                                                         onmouseout="this.src='assets/vitiligio-1@2x.png'"
-                                                        alt="ballons" id="image" />
+                                                        alt="ballons" id="image" role="image"  aria-hidden="true" />
 
                                         </div>
                                         <div class="card-body">
 
                                                 <h6>
-                                                        Vitiligio Solution
+                                                        Vitigio Solution
                                                 </h6>
                                                 <p>
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                 
 
                                         </div>
@@ -190,7 +183,7 @@
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                 
 
                                         </div>
@@ -200,13 +193,13 @@
                                                 <button class="new-tag offer">15% off</button>
                                                 <img src="assets/suburn1.png"
                                                         onmouseover="this.src='assets/suburn_balm.png'"
-                                                        onmouseout="this.src='assets/suburn1.png'" alt="city" id="image"/>
+                                                        onmouseout="this.src='assets/suburn1.png'" alt="city" role="image"  aria-hidden="true" id="image"/>
 
                                         </div>
                                         <div class="card-body">
 
                                                 <h6>
-                                                        Sunburn Ointment
+                                                        Sunburn Cream
                                                 </h6>
 
                                                 <p>
@@ -214,7 +207,7 @@
                                                 </p>
                                                 <h6 class="offer-color">$18.99 <span class="text-strike">$24.99 </span>
                                                 </h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                
 
                                         </div>
@@ -225,10 +218,10 @@
 
                 
                 <!-- Teaser Starts from here -->
-                <section>
+                <section name="Teaser">
 
                         <div class="aem-Grid aem-Grid--2 teaser">
-                                <div class="aem-GridColumn aem-GridColumn--default--1 teaser-left">
+                                <div class="aem-GridColumn aem-GridColumn--default--2 teaser-left">
                                         <div class="teaser-text">
 
                                                 <h3>
@@ -238,13 +231,13 @@
                                                         ingredients to create
                                                         a line of clean skin care treatments that leave you feeling your
                                                         best</p>
-                                                <button class="sooth-button"> Shop more</button>
+                                                <button class="sooth-button" role="button" name="shop"> Shop more</button>
                                                 
 
                                         </div>
 
                                 </div>
-                                <div class="aem-GridColumn aem-GridColumn--default--1 teaser-right">
+                                <div class="aem-GridColumn aem-GridColumn--default--2 teaser-right">
                                         <img id="clip" src="assets/man-in-bluee.png" alt="man-in-bluee-image">
                                 </div>
 
@@ -253,26 +246,26 @@
                 <!-- Teaser Ends here -->
                  
                 <!-- Product Teaser two starts from here-->
-                <section class="product-teaser">
+                <section class="product-teaser" name="Product-teaser">
                         <h6 class="pb-30px">Top rated <span class="teaser-title">Shop all Products</span></h6>
                         <div class="container">
                                 <article class="card">
                                         <div class="card-header">
 
-                                                <img src="assets/suburn1.png" alt="suburn-creame" />
+                                                <img src="assets/suburn1.png" alt="suburn-creame" role="image"  aria-hidden="true" />
 
                                         </div>
                                         <div class="card-body">
 
                                                 <h6>
-                                                        Sunburn Ointment
+                                                        Suburn Ointment
                                                 </h6>
 
                                                 <p>
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$18.99 </h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                               
 
                                         </div>
@@ -280,19 +273,19 @@
                                 <article class="card">
                                         <div class="card-header">
 
-                                                <img src="assets/vitiligio-1@2x.png"  alt="vitiligio-bottle" />
+                                                <img src="assets/vitiligio-1@2x.png"  alt="vitiligio-bottle" role="image"  aria-hidden="true" />
 
                                         </div>
                                         <div class="card-body">
 
                                                 <h6>
-                                                        Vitiligio Solution
+                                                        Vitigio Solution
                                                 </h6>
                                                 <p>
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                 
 
                                         </div>
@@ -300,7 +293,7 @@
                                 <article class="card">
                                         <div class="card-header">
 
-                                                <img src="assets/Cream1.png"  alt="creame-one" />
+                                                <img src="assets/Cream1.png"  alt="creame-one" role="image"  aria-hidden="true" />
 
                                         </div>
                                         <div class="card-body">
@@ -312,7 +305,7 @@
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
                                                 
 
                                         </div>
@@ -321,7 +314,7 @@
                                 <article class="card">
                                         <div class="card-header">
 
-                                                <img src="assets/ezcema-1.png"  alt="Ezcema-cream-image" />
+                                                <img src="assets/ezcema-1.png"  alt="Ezcema-cream-image" role="image"  aria-hidden="true" />
                                         </div>
                                         <div class="card-body">
 
@@ -332,7 +325,7 @@
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                
 
                                         </div>
@@ -342,7 +335,7 @@
 
                 </section>
 
-                <section class="product-teaser">
+                <section class="product-teaser" name="product-Teaser">
 
                         <div class="container">
                                  
@@ -361,7 +354,7 @@
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button">Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
 
                                         </div>
                                 </article>
@@ -374,13 +367,13 @@
                                         <div class="card-body">
 
                                                 <h6>
-                                                        Vitiligio Solution
+                                                        Vitigio Solution
                                                 </h6>
                                                 <p>
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                
 
                                         </div>
@@ -399,7 +392,7 @@
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                
 
                                         </div>
@@ -421,7 +414,7 @@
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                 
 
                                         </div>
@@ -431,12 +424,12 @@
                 <!-- Product Teaser two ends here -->
 
                 <!-- Teaser two starts from here -->
-                <section class="teaser2">
+                <section class="teaser2" arial-label="teaser-two">
                         <div class="aem-Grid aem-Grid--2 teaser">
-                                <div class="aem-GridColumn aem-GridColumn--default--1 teaser-right">
-                                        <img id="clip" src="assets/sincerely-media.png" alt="man-in-bluee-image">
+                                <div class="aem-GridColumn aem-GridColumn--default--2 teaser-right">
+                                        <img id="clip" src="assets/sincerely-media.png" alt="man-in-bluee-image" role="image">
                                 </div>
-                                <div class="aem-GridColumn aem-GridColumn--default--1 teaser-left">
+                                <div class="aem-GridColumn aem-GridColumn--default--2 teaser-left">
                                         <div class="teaser-text">
 
                                                 <h2>
@@ -447,7 +440,7 @@
                                                         a line of clean skin care treatments that leave you feeling your
                                                         best
                                                 </p>
-                                                <button class="sooth-button"> Shop more</button>
+                                                <button class="sooth-button" role="button" name="cart"> Shop more</button>
                                                
 
                                         </div>
@@ -460,25 +453,25 @@
                  <!-- Teaser two ends here-->
 
                  <!-- Product teaser three starts from here -->
-                <section class="product-teaser">
+                <section class="product-teaser" aria-label="Product-teaser">
                         <h6 class="pb-30px">Recommended <span class="teaser-title">Shop all Products</span></h6>
                         <div class="container">
                                 <article class="card">
                                         <div class="card-header">
 
-                                                <img src="assets/psoriasis_treatment@2x.png" alt="acne-creame" />
+                                                <img src="assets/psoriasis_treatment@2x.png" alt="acne-creame" role="image" />
 
                                         </div>
                                         <div class="card-body">
 
                                                 <h6>
-                                                        Psoriasis Cream
+                                                        Psoria Cream
                                                 </h6>
                                                 <p>
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                 
 
                                         </div>
@@ -492,13 +485,13 @@
                                         <div class="card-body">
 
                                                 <h6>
-                                                        Vitiligio Solution
+                                                        Vitigio Solution
                                                 </h6>
                                                 <p>
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                
 
                                         </div>
@@ -517,7 +510,7 @@
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                                
 
                                         </div>
@@ -538,7 +531,7 @@
                                                         All Natural Ingredients.
                                                 </p>
                                                 <h6>$24.99</h6>
-                                                <button class="sooth-button"> <i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                                <button class="sooth-button" role="button" name="cart" role="image"  aria-hidden="true"> <i class="fa fa-shopping-cart" role="icon"></i> Add to cart</button>
                                               
 
                                         </div>
@@ -548,8 +541,8 @@
                  <!-- Product Teaser three ends here -->
                   
                  <!-- Image tiles starts from here -->
-                <section class="image-tiles">
-                        <div class="aem-Grid aem-Grid--3">
+                <section class="image-tiles" arila-label="image-tiles">
+                        <div class="aem-Grid aem-Grid--3 tiles">
                             <h3>We use the best ingredients</h3><p>Explore our innovative skincare products</p>
 
                         
@@ -557,7 +550,7 @@
                                 
                                         <div class="card-header">
 
-                                                <img src="assets/cacao.png"  alt="plant leaves"/>
+                                                <img src="assets/cacao.png"  alt="plant leaves" role="image" aria-hidden="true"/>
 
                                         </div>
                                         <div class="card-body">
@@ -677,7 +670,7 @@
                 <!-- Image tiles ends here -->
 
                 <!-- Feature banner starts form here-->
-                <section class="feature-banner">
+                <section class="feature-banner" aria-label="feature-banner">
 
                        
                                 <div class="aem-Grid aem-Grid--3">
@@ -693,7 +686,7 @@
                                                                 We’re offering new <br> ways to shop.
                                                         </h6>
                                                         <p>
-                                                               <a>Store locator</a>
+                                                               <a role="link">Store locator</a>
                                                         </p>
                                                         
         
@@ -708,7 +701,7 @@
                                                                 Buy online, pickup <br>in store
                                                         </h6>
                                                         <p>
-                                                                <a>Learn more</a>
+                                                                <a role="link">Learn more</a>
                                                         </p>
                                                         
         
@@ -723,7 +716,7 @@
                                                                 Curbside<br> pickup
                                                         </h6>
                                                         <p>
-                                                                <a>Learn more</a>
+                                                                <a role="link">Learn more</a>
                                                         </p>
                                                         
         
@@ -755,18 +748,18 @@
         
 
                 <!-- footer starts from here-->
-                <footer>
+                <footer role="footer">
                     
                    <div class="footer-section">
                            <div class="footer-left">
                                 <h3>sooth</h3> 
                                 <p>Explore our innovative skincare products</p> 
-                                <input name="email" class="sooth-input" >  <button  class="sooth-button">Subscribe</button>
+                                <input name="email" class="sooth-input"role="input" >  <button  class="sooth-button" role="button" name="subscribe">Subscribe</button>
                            </div>
                            <div class="footer-right">
                                 <div class="aem-Grid aem-Grid--3">
                                         <div class="aem-GridColumn aem-GridColumn--default--1">
-                                                <ul>
+                                                <ul role="links">
                                                         <li><h6>SHOP  </li>
                                                         <li> Lorem ipsum al </li>
                                                         <li> Dolar at </li>
@@ -777,7 +770,7 @@
                                                 </ul>
                                         </div> 
                                         <div class="aem-GridColumn aem-GridColumn--default--1">
-                                                <ul>
+                                                <ul role="links">
                                                         <li> <h6>ABOUT</h6> </li>
                                                         <li>About Us  </li>
                                                         <li>Sooth Stories (Blog)  </li>
@@ -814,13 +807,13 @@
                                 <li><a>Contact Us</a></li>
                         </ul>
                       </div>
-                      <div class="footer-right">
+                      <aside class="footer-right" aria-label="social-navigation" role="social links">
 
                         <i class="fa fa-youtube fa-2x"></i>
                         <i class="fa fa-twitter fa-2x "></i>
                         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                         <i class="fa fa-facebook circle fa-2x"></i>
-                      </div>
+                      </aside>
                    </div>
                   <!-- copy rights section in footer ends here -->
 
