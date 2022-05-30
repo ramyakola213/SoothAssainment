@@ -1,5 +1,6 @@
 @import url("root.css");
 @import url("aem-grid-12.css");
+@import url("responssive.css");
 @import url("font-awesome/css/font-awesome.css");
 
 
@@ -406,7 +407,9 @@ footer{
 
 @media screen and (max-width: 768px) {
 
-
+          header .logo{
+                  padding:0px;
+          }
         .hero-banner {
                 display: flex;
                 flex-direction: row;
@@ -513,8 +516,7 @@ footer{
                 padding: 0px 12px 60px 12px;
             }
         .hero-banner .hero-banner-image {
-                background-image: url(../assets/plant.png), url(../assets/plant-1.png);
-                background-image: url(../assets/plant.png), url(../assets/plant-1.png);
+
                 background-position: -50px 50px, 55px -38px;
                 background-size: contain;
                 width: 75%;

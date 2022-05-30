@@ -1,2 +1,320 @@
 
+@media screen  and (max-width: 768px) {
 
+
+        .hero-banner {
+                display: flex;
+                flex-direction: row;
+                padding: 0px 12px 60px 12px;
+               
+            }
+            .header-banner{
+                background-position: 60% 6%;
+            }
+            .hero-banner .hero-banner-text {
+                justify-content: center;
+                padding:  0; 
+            }
+            .product-teaser {
+                margin: 60px 30px 120px;
+            }
+             .desk{
+                display: inline;
+            }
+             .mobile{
+                display: none;
+        }
+            .container > article 
+                {
+                        flex: 50%; 
+                        margin-bottom: 10px;
+                }
+
+                .teaser-text {
+                       
+                        margin: 40px 30px 20px;
+                }
+
+                .teaser2 .teaser-text {
+                        margin: 40px 20px;
+                    }
+
+                    .image-tiles {
+                        text-align: center;
+                        margin: 0px 80px 10px;
+                    }
+                    .feature-banner {
+                        padding: 40px 30px;
+                    }
+
+                    .news-letter {
+                        padding: 20px 56px;
+
+                    }
+        
+
+                    .footer-section {
+                        display: flex;
+                        padding: 80px 50px 60px;
+                    }
+                    .copyright-section {
+                        display: flex;
+                        margin: 10px 70px;
+                        padding: 40px 0px;
+
+                    }
+                    .sooth-input {
+                        padding: 6px 0px;
+                    }
+
+                    .copyright-section li {
+                       
+                        padding-right: 20px;
+                    }
+                    .new-tag, .tag{
+                        display: none;
+                }
+}
+
+
+@media  (max-width: 320px) {
+
+        .sooth-left {
+                display: none;
+                float: left;
+            }
+
+         .sooth-right{
+                 padding-top: 20px;
+         }   
+            .navbar{
+              display:none
+            }
+            header {
+                padding: 0;
+        } 
+            header .logo{
+                    padding: 0;
+            }
+            
+            header nav {
+                padding: 16px 20px 10px;
+                font-weight: bold;
+            }
+
+        .hero-banner {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 0px 12px 60px 12px;
+            }
+        .hero-banner .hero-banner-image {
+
+                background-position: -50px 50px, 55px -38px;
+                background-size: contain;
+                width: 75%;
+                background-repeat: no-repeat;
+                flex: 2;
+                }
+
+                .header-banner {
+                        background-position: 67% 151%;
+                    }  
+         h1{
+                 font-size:41px;
+         }    
+        .new-tag{
+                display: none;
+        }
+         .desk{
+                display: none;
+        }
+        .mobile{
+                display: inline;
+        }
+        .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        .container > article 
+        {
+                flex: 0%; 
+                margin-bottom: 0px;
+        }
+        .card {
+                margin-right: 10px;
+                height: 480px;
+                
+            }
+            .text-strike{
+                    display: none;
+            }
+
+
+            .teaser {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .image-tiles{
+                text-align: center;
+                margin: 0px  60px 60px;
+                display: flex;
+                flex-direction: column;
+        }
+        .tiles{
+                display:flex;
+                flex-direction: column;
+        }
+        .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--1 {
+                width: 100%;
+        }
+        .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--1 {
+                width: 100%;
+        }
+        .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--2{
+                width: 100%;
+        } 
+        .news-letter {
+                padding: 10px ;
+            }
+            .footer-section {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 40px 10px ;
+            }
+            .footer-section .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--1 {
+                width: 50%;
+            }
+            .copyright-section {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 10px;
+                padding: 40px 0px;
+            }
+            .copyright-section .fa {
+                float: none;
+        }
+
+}
+
+
+@media screen and (min-width: 375px) {
+
+        .sooth-left {
+                display: none;
+                float: left;
+            }
+
+         .sooth-right{
+                 padding-top: 20px;
+         }   
+            .navbar{
+              display:none
+            }
+            header {
+                padding: 0;
+        } 
+            header .logo{
+                    padding: 0;
+            }
+            
+            header nav {
+                padding: 16px 20px 10px;
+                font-weight: bold;
+            }
+
+        .hero-banner {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 0px 12px 60px 12px;
+            }
+        .hero-banner .hero-banner-image {
+
+                background-position: -50px 50px, 55px -38px;
+                background-size: contain;
+                width: 75%;
+                background-repeat: no-repeat;
+                flex: 2;
+                }
+
+                .header-banner {
+                        background-position: 67% 151%;
+                    }  
+         h1{
+                 font-size:41px;
+         }    
+        .new-tag{
+                display: none;
+        }
+         .desk{
+                display: none;
+        }
+        .mobile{
+                display: inline;
+        }
+        .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        .container > article 
+        {
+                flex: 33%; 
+                margin-bottom: 0px;
+        }
+        .card {
+                margin-right: 10px;
+                height: 480px;
+                
+            }
+            .text-strike{
+                    display: none;
+            }
+
+
+            .teaser {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .image-tiles{
+                text-align: center;
+                margin: 0px  60px 60px;
+                display: flex;
+                flex-direction: column;
+        }
+        .tiles{
+                display:flex;
+                flex-direction: column;
+        }
+        .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--1 {
+                width: 100%;
+        }
+        .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--1 {
+                width: 100%;
+        }
+        .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--2{
+                width: 100%;
+        } 
+        .news-letter {
+                padding: 10px ;
+            }
+            .footer-section {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 40px 10px ;
+            }
+            .footer-section .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--1 {
+                width: 50%;
+            }
+            .copyright-section {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 10px;
+                padding: 40px 0px;
+            }
+            .copyright-section .fa {
+                float: none;
+        }
+
+
+}
