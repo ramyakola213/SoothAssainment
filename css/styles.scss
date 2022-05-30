@@ -1,6 +1,9 @@
 @import "root.css";
 @import "aem-grid-12.css";
-@import "font-awesome/css/font-awesome.css";
+@import "font-awesome/css/font-awesome.scss";
+@import "font-awesome/scss/variables.scss";
+@import "font-awesome/scss/mixins.scss";
+
 
 
 body {
@@ -9,6 +12,8 @@ body {
 	color: $oxford-blue;
 	font-size: 14px;
 }
+
+// offer banner starts 
 .offer-banner {
 	top: 0px;
 	left: 0px;
@@ -21,6 +26,8 @@ body {
 	text-align: center;
 	line-height: 38px;
 }
+
+//Header starts
 header {
 	padding: 0 50px 30px 50px;
 	ul {
@@ -51,6 +58,8 @@ header {
 	background-size: auto, auto;
 	position: relative;
 }
+
+//hero banner starts
 .hero-banner {
 	display: flex;
 	padding: 0px 140px 60px 140px;
@@ -81,12 +90,16 @@ header {
 		position: relative;
 	}
 }
+
+//secondary banner starts
 .secondary-banner {
 	padding: 30px;
 	text-align: center;
 	line-height: 30px;
 	border: 1px solid $como;
 }
+
+//product teaser starts
 .product-teaser {
 	margin: 60px 130px 120px;
 	.teaser-title {
@@ -99,6 +112,9 @@ header {
 	padding: 6px 30px;
 	margin: 20px 0;
 }
+
+
+
 .container {
 	display: flex;
 }
@@ -139,6 +155,9 @@ header {
 .aem-GridColumn--default--1 {
 	margin-bottom: 30px;
 }
+
+
+//image tiles starts
 .image-tiles {
 	text-align: center;
 	margin: 0px 160px 100px;
@@ -155,6 +174,8 @@ header {
 		margin: 0 10px;
 	}
 }
+
+//feature banner starts
 .feature-banner {
 	padding: 40px 230px;
 	text-align: center;
@@ -182,6 +203,7 @@ header {
 	font-size: 12px;
 	cursor: pointer;
 }
+//for offer tag stayles
 .offer {
 	color: $cape-palliser;
 }
@@ -192,6 +214,9 @@ header {
 	text-decoration: line-through;
 	color: $rangitoto;
 }
+
+
+//teaser starts styles
 .teaser {
 	display: flex;
 	img {
@@ -222,6 +247,8 @@ header {
 		margin: 160px 94px;
 	}
 }
+
+//news letter styles
 .news-letter {
 	padding: 20px 100px;
 	background-color: $background-color_4;
@@ -245,6 +272,8 @@ header {
 .pb-30px {
 	padding-bottom: 30px;
 }
+
+//input button and subscribe in newsletter styles
 .sooth-input {
 	padding: 6px 30px;
 	margin-right: -5px;
@@ -253,6 +282,9 @@ header {
 .subscribe {
 	text-align: end;
 }
+
+
+//footer styles
 footer {
 	background-color: $oxford-blue;
 	color: $white;
@@ -261,6 +293,7 @@ footer {
 	display: flex;
 	padding: 120px 100px 80px;
 }
+
 .footer-right {
 	flex-direction: column;
 	flex: 2;
@@ -272,11 +305,13 @@ footer {
 		padding-bottom: 10px;
 	}
 }
+
 @mixin sooth-btn {
         background: transparent;
         border: 1px solid $white;
         color: $white;     
 }
+
 .footer-left {
 	flex: 2;
 	line-height: 3;
@@ -288,6 +323,7 @@ footer {
                 @include sooth-btn;
 	}
 }
+// for copy right section styles
 .copyright-section {
 	display: flex;
 	margin: 10px 100px;
@@ -303,5 +339,62 @@ footer {
 		float: right;
 		padding: 10px 0 0 25px;
 		color: $white;
+	}
+}
+
+// footer style ends
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+	.hero-banner {
+		display: flex;
+		flex-direction: row;
+		padding: 0px 12px 60px 12px;
+		.hero-banner-text {
+			justify-content: center;
+			padding: 0;
+		}
+	}
+
+	.product-teaser {
+		margin: 60px 30px 120px;
+	}
+	.container {
+		>article {
+			flex: 50%;
+			margin-bottom: 10px;
+		}
+	}
+	.teaser-text {
+		margin: 40px 30px 20px;
+	}
+	.teaser2 {
+		.teaser-text {
+			margin: 40px 20px;
+		}
+	}
+	.image-tiles {
+		text-align: center;
+		margin: 0px 80px 10px;
+	}
+	.feature-banner {
+		padding: 40px 30px;
+	}
+	.news-letter {
+		padding: 20px 56px;
+	}
+	.footer-section {
+		display: flex;
+		padding: 80px 50px 60px;
+	}
+	.copyright-section {
+		display: flex;
+		margin: 10px 70px;
+		padding: 40px 0px;
+	}
+	.sooth-input {
+		padding: 6px 0px;
 	}
 }
